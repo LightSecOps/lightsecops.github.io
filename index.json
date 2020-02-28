@@ -1,5 +1,19 @@
 [
 {
+	"uri": "http://lightsecops.github.io/methodologies/recon/",
+	"title": "Recon",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://lightsecops.github.io/methodologies/",
+	"title": "Méthodologies",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "http://lightsecops.github.io/",
 	"title": "",
 	"tags": [],

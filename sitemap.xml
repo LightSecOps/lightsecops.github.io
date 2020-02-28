@@ -3,6 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://lightsecops.github.io/methodologies/recon/</loc>
+  </url>
+  
+  <url>
+    <loc>http://lightsecops.github.io/methodologies/</loc>
+  </url>
+  
+  <url>
     <loc>http://lightsecops.github.io/</loc>
     <priority>0</priority>
   </url>
