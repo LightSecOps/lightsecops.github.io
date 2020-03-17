@@ -11,6 +11,14 @@
   </url>
   
   <url>
+    <loc>http://lightsecops.github.io/methodologies/execution/</loc>
+  </url>
+  
+  <url>
+    <loc>http://lightsecops.github.io/methodologies/post_exploitation/</loc>
+  </url>
+  
+  <url>
     <loc>http://lightsecops.github.io/vulnerability_corner/</loc>
   </url>
   
@@ -21,6 +29,10 @@
   <url>
     <loc>http://lightsecops.github.io/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://lightsecops.github.io/methodologies/execution/t1173_dynamic_data_exchange/</loc>
   </url>
   
   <url>
