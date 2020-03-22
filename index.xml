@@ -1,87 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Another InfoSec Blog</title>
+    <title>Acceuil on Another InfoSec Blog</title>
     <link>http://lightsecops.github.io/</link>
-    <description>Recent content on Another InfoSec Blog</description>
+    <description>Recent content in Acceuil on Another InfoSec Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>FR-fr</language>
     
 	<atom:link href="http://lightsecops.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>CVE-2008-4037</title>
+      <title>CVE-2008-4037 aka Faux PAC</title>
       <link>http://lightsecops.github.io/vulnerability_corner/cve-2008-4037/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://lightsecops.github.io/vulnerability_corner/cve-2008-4037/</guid>
-      <description>Microsoft Windows Kerberos - Privilege Escalation aka Faux PAC Résumé Date : 18 Novembre 2014
+      <description>Microsoft Windows Kerberos - Privilege Escalation Résumé Date : 18 Novembre 2014
 Type : Elevation de privilèges
 Description : Vulnérabilité critique dans le composant Kerberos Key Distribution Center (KDC). L’exploitation de cette vulnérabilité peut permettre à n’importe quel compte utilisateur du domaine disposant de privilèges standards d’obtenir ceux d’un administrateur du domaine.
 Fichier : kdcsvc.dll
 Score CVSS : 9.3
 Accès :
-    Vecteur Complexité Authentification     RESEAU MOYENNE NON     Impact :</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://lightsecops.github.io/methodologies/execution/t1173_dynamic_data_exchange/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://lightsecops.github.io/methodologies/execution/t1173_dynamic_data_exchange/</guid>
-      <description>T1173 - Dynamic Data Exchange (DDE) ID: T1173 Tactique: exécution Plateforme: Windows Autorisations requises: Utilisateur Sources de données:
-Version: 1 Création: 17/03/2020 Dernière modification: 17/03/2020
- Le protocole DDE est une ancienne technologie de Microsoft utilisée pour facilite le transfèrer des données entre deux applications. Inter-Process Communication (IPC).
-Cette technique peut être utilisé dans les scénarios de Phishing.
-l&amp;rsquo;exécution du code dans les documents Microsoft Office.
-Référence https://docs.microsoft.com/fr-fr/windows/win32/dataxchg/about-dynamic-data-exchange?redirectedfrom=MSDN https://enigma0x3.net/2018/01/29/reviving-dde-using-onenote-and-excel-for-code-execution/ https://pentestlab.blog/2018/01/16/microsoft-office-dde-attacks/</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://lightsecops.github.io/methodologies/recon/enumeration/dns/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://lightsecops.github.io/methodologies/recon/enumeration/dns/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://lightsecops.github.io/methodologies/recon/enumeration/ftp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://lightsecops.github.io/methodologies/recon/enumeration/ftp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://lightsecops.github.io/methodologies/recon/enumeration/ldap/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://lightsecops.github.io/methodologies/recon/enumeration/ldap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://lightsecops.github.io/methodologies/recon/enumeration/smb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://lightsecops.github.io/methodologies/recon/enumeration/smb/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://lightsecops.github.io/methodologies/recon/enumeration/snmp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://lightsecops.github.io/methodologies/recon/enumeration/snmp/</guid>
-      <description></description>
+   Vecteur Complexité Authentification     RESEAU MOYENNE NON    Impact :</description>
     </item>
     
   </channel>
