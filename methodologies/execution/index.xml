@@ -5,10 +5,22 @@
     <link>http://lightsecops.github.io/methodologies/execution/</link>
     <description>Recent content in Execution on Another InfoSec Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>FR-fr</language>
     
 	<atom:link href="http://lightsecops.github.io/methodologies/execution/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>T1223 - Fichier HTML Compilé</title>
+      <link>http://lightsecops.github.io/methodologies/execution/t1223_-compiled_html_file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://lightsecops.github.io/methodologies/execution/t1223_-compiled_html_file/</guid>
+      <description>T1223 - Fichier HTML Compilé ID: T1223 Tactique: Exécution,Evasion Plateforme: Windows Autorisations requises: Utilisateur Type de Défense contourné: Version: 1 Création: 23/03/2020 Dernière modification: 17/03/2020
+ Description Les fichiers HTML compilés avec une extenstion (.chm) peuvent êter utilisé comme vecteur de phishing.
+Procédure $ip = adresse IP $port = Port attaquants
+ - Nishang Le compilateur htmlhelp.exe est nécessaire il faut donc le télécharger et l&amp;rsquo;installer. Opération compliqué sous linux (Nécessite une machine Windows).</description>
+    </item>
     
     <item>
       <title></title>
@@ -16,12 +28,12 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://lightsecops.github.io/methodologies/execution/t1173_dynamic_data_exchange/</guid>
-      <description>T1173 - Dynamic Data Exchange (DDE) ID: T1173 Tactique: exécution Plateforme: Windows Autorisations requises: Utilisateur Sources de données:
+      <description>T1173 - Dynamic Data Exchange (DDE) ID: T1173 Tactique: Exécution Plateforme: Windows Autorisations requises: Utilisateur Sources de données:
 Version: 1 Création: 17/03/2020 Dernière modification: 17/03/2020
- Le protocole DDE est une ancienne technologie de Microsoft utilisée pour facilite le transfèrer des données entre deux applications. Inter-Process Communication (IPC).
+ Description Le protocole DDE est une ancienne technologie de Microsoft utilisée pour facilite le transfèrer des données entre deux applications. Inter-Process Communication (IPC).
 Cette technique peut être utilisé dans les scénarios de Phishing.
 l&amp;rsquo;exécution du code dans les documents Microsoft Office.
-Référence https://docs.microsoft.com/fr-fr/windows/win32/dataxchg/about-dynamic-data-exchange?redirectedfrom=MSDN https://enigma0x3.net/2018/01/29/reviving-dde-using-onenote-and-excel-for-code-execution/ https://pentestlab.blog/2018/01/16/microsoft-office-dde-attacks/</description>
+Référence https://docs.microsoft.com/fr-fr/windows/win32/dataxchg/about-dynamic-data-exchange?redirectedfrom=MSDN https://enigma0x3.net/2018/01/29/reviving-dde-using-onenote-and-excel-for-code-execution/ https://pentestlab.</description>
     </item>
     
   </channel>

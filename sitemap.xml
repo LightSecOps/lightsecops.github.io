@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://lightsecops.github.io/methodologies/execution/t1223_-compiled_html_file/</loc>
+  </url>
+  
+  <url>
     <loc>http://lightsecops.github.io/vulnerability_corner/cve-2008-4037/</loc>
   </url>
   
@@ -12,6 +16,18 @@
   
   <url>
     <loc>http://lightsecops.github.io/vulnerability_corner/</loc>
+  </url>
+  
+  <url>
+    <loc>http://lightsecops.github.io/methodologies/execution/</loc>
+  </url>
+  
+  <url>
+    <loc>http://lightsecops.github.io/methodologies/</loc>
+  </url>
+  
+  <url>
+    <loc>http://lightsecops.github.io/methodologies/execution/t1173_dynamic_data_exchange/</loc>
   </url>
   
   <url>

