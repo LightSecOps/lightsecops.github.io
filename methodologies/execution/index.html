@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.68.0" />
+    <meta name="generator" content="Hugo 0.68.3" />
     <meta name="description" content="">
 <meta name="author" content="Light">
 
@@ -12,20 +12,20 @@
     <title>Execution :: Another InfoSec Blog</title>
 
     
-    <link href="/css/nucleus.css?1584987425" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1584987425" rel="stylesheet">
-    <link href="/css/hybrid.css?1584987425" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1584987425" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1584987425" rel="stylesheet">
-    <link href="/css/auto-complete.css?1584987425" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1584987425" rel="stylesheet">
-    <link href="/css/theme.css?1584987425" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1584987425" rel="stylesheet">
+    <link href="/css/nucleus.css?1588768639" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1588768639" rel="stylesheet">
+    <link href="/css/hybrid.css?1588768639" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1588768639" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1588768639" rel="stylesheet">
+    <link href="/css/auto-complete.css?1588768639" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1588768639" rel="stylesheet">
+    <link href="/css/theme.css?1588768639" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1588768639" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1584987425" rel="stylesheet">
+      <link href="/css/theme-blue.css?1588768639" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1584987425"></script>
+    <script src="/js/jquery-3.3.1.min.js?1588768639"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -161,14 +161,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1584987425"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1584987425"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1588768639"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1588768639"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/lightsecops.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1584987425"></script>
+<script type="text/javascript" src="/js/search.js?1588768639"></script>
 
     
   </div>
@@ -201,6 +201,25 @@
           
           
         
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/vulnerability_corner/cve-2019-0683/" title="CVE-2019-0683" class="dd-item ">
+        <a href="/vulnerability_corner/cve-2019-0683/">
+        CVE-2019-0683 aka printer bug
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
           
             
             
@@ -287,9 +306,9 @@
  
   
     
-      <li data-nav-id="/methodologies/execution/t1223_-compiled_html_file/" title="T1223 - Fichier HTML Compilé" class="dd-item ">
-        <a href="/methodologies/execution/t1223_-compiled_html_file/">
-        T1223 - Fichier HTML Compilé
+      <li data-nav-id="/methodologies/execution/t1173_dynamic_data_exchange/" title="T1173 - Dynamic Data Exchange (DDE)" class="dd-item ">
+        <a href="/methodologies/execution/t1173_dynamic_data_exchange/">
+        T1173 - Dynamic Data Exchange (DDE)
         
         </a>
     </li>
@@ -306,9 +325,9 @@
  
   
     
-      <li data-nav-id="/methodologies/execution/t1173_dynamic_data_exchange/" title="" class="dd-item ">
-        <a href="/methodologies/execution/t1173_dynamic_data_exchange/">
-        
+      <li data-nav-id="/methodologies/execution/t1223_-compiled_html_file/" title="T1223 - Fichier HTML Compilé" class="dd-item ">
+        <a href="/methodologies/execution/t1223_-compiled_html_file/">
+        T1223 - Fichier HTML Compilé
         
         </a>
     </li>
@@ -420,7 +439,17 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#windows">Windows</a>
+      <ul>
+        <li><a href="#technique-listes-">Technique listes :</a></li>
+      </ul>
+    </li>
+    <li><a href="#linux">Linux</a></li>
+  </ul>
+</nav>
     </div>
 </div>
 
@@ -445,7 +474,20 @@
 
 
 
-	
+	<h2 id="introduction">Introduction</h2>
+<p>L&rsquo;exécution consiste en des techniques qui permettent de déployer du code sur la machine cible local ou distante (la victime).
+Les techniques d&rsquo;exécution de code malveillant sont souvent associées à d&rsquo;autres techniques pour atteindre des objectifs plus larges.
+Ainsi, lors de cette étape nous allons chercher à exécuter du code que nous (attaquant) contrôlons, généralement un <strong>SHELL</strong>.</p>
+<h2 id="windows">Windows</h2>
+<h3 id="technique-listes-">Technique listes :</h3>
+<blockquote>
+<ul>
+<li><strong>T1173.</strong><a href="https://lightsecops.github.io/methodologies/execution/t1173_dynamic_data_exchange/"><strong>Dynamic Data Exchange (DDE)</strong></a></li>
+<li><strong>T1223.</strong><a href="https://lightsecops.github.io/methodologies/execution/t1223_-compiled_html_file/"><strong>Fichier HTML Compilé</strong></a></li>
+</ul>
+</blockquote>
+<h2 id="linux">Linux</h2>
+
 
 
 
@@ -495,6 +537,22 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
@@ -598,7 +656,7 @@
 			<a class="nav nav-prev" href="/methodologies/" title="Méthodologies"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/methodologies/execution/t1223_-compiled_html_file/" title="T1223 - Fichier HTML Compilé" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/methodologies/execution/t1173_dynamic_data_exchange/" title="T1173 - Dynamic Data Exchange (DDE)" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -608,19 +666,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1584987425"></script>
-    <script src="/js/perfect-scrollbar.min.js?1584987425"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1584987425"></script>
-    <script src="/js/jquery.sticky.js?1584987425"></script>
-    <script src="/js/featherlight.min.js?1584987425"></script>
-    <script src="/js/highlight.pack.js?1584987425"></script>
+    <script src="/js/clipboard.min.js?1588768639"></script>
+    <script src="/js/perfect-scrollbar.min.js?1588768639"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1588768639"></script>
+    <script src="/js/jquery.sticky.js?1588768639"></script>
+    <script src="/js/featherlight.min.js?1588768639"></script>
+    <script src="/js/highlight.pack.js?1588768639"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1584987425"></script>
-    <script src="/js/learn.js?1584987425"></script>
-    <script src="/js/hugo-learn.js?1584987425"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1588768639"></script>
+    <script src="/js/learn.js?1588768639"></script>
+    <script src="/js/hugo-learn.js?1588768639"></script>
 
-    <link href="/mermaid/mermaid.css?1584987425" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1584987425"></script>
+    <link href="/mermaid/mermaid.css?1588768639" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1588768639"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

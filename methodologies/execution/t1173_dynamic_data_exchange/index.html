@@ -3,29 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.68.0" />
+    <meta name="generator" content="Hugo 0.68.3" />
     <meta name="description" content="">
 <meta name="author" content="Light">
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title> :: Another InfoSec Blog</title>
+    <title>T1173 - Dynamic Data Exchange (DDE) :: Another InfoSec Blog</title>
 
     
-    <link href="/css/nucleus.css?1584987425" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1584987425" rel="stylesheet">
-    <link href="/css/hybrid.css?1584987425" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1584987425" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1584987425" rel="stylesheet">
-    <link href="/css/auto-complete.css?1584987425" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1584987425" rel="stylesheet">
-    <link href="/css/theme.css?1584987425" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1584987425" rel="stylesheet">
+    <link href="/css/nucleus.css?1588768639" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1588768639" rel="stylesheet">
+    <link href="/css/hybrid.css?1588768639" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1588768639" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1588768639" rel="stylesheet">
+    <link href="/css/auto-complete.css?1588768639" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1588768639" rel="stylesheet">
+    <link href="/css/theme.css?1588768639" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1588768639" rel="stylesheet">
     
-      <link href="/css/theme-blue.css?1584987425" rel="stylesheet">
+      <link href="/css/theme-blue.css?1588768639" rel="stylesheet">
     
 
-    <script src="/js/jquery-3.3.1.min.js?1584987425"></script>
+    <script src="/js/jquery-3.3.1.min.js?1588768639"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -161,14 +161,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1584987425"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1584987425"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1588768639"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1588768639"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/lightsecops.github.io\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1584987425"></script>
+<script type="text/javascript" src="/js/search.js?1588768639"></script>
 
     
   </div>
@@ -201,6 +201,25 @@
           
           
         
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/vulnerability_corner/cve-2019-0683/" title="CVE-2019-0683" class="dd-item ">
+        <a href="/vulnerability_corner/cve-2019-0683/">
+        CVE-2019-0683 aka printer bug
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
           
             
             
@@ -287,9 +306,9 @@
  
   
     
-      <li data-nav-id="/methodologies/execution/t1223_-compiled_html_file/" title="T1223 - Fichier HTML Compilé" class="dd-item ">
-        <a href="/methodologies/execution/t1223_-compiled_html_file/">
-        T1223 - Fichier HTML Compilé
+      <li data-nav-id="/methodologies/execution/t1173_dynamic_data_exchange/" title="T1173 - Dynamic Data Exchange (DDE)" class="dd-item active">
+        <a href="/methodologies/execution/t1173_dynamic_data_exchange/">
+        T1173 - Dynamic Data Exchange (DDE)
         
         </a>
     </li>
@@ -306,9 +325,9 @@
  
   
     
-      <li data-nav-id="/methodologies/execution/t1173_dynamic_data_exchange/" title="" class="dd-item active">
-        <a href="/methodologies/execution/t1173_dynamic_data_exchange/">
-        
+      <li data-nav-id="/methodologies/execution/t1223_-compiled_html_file/" title="T1223 - Fichier HTML Compilé" class="dd-item ">
+        <a href="/methodologies/execution/t1223_-compiled_html_file/">
+        T1223 - Fichier HTML Compilé
         
         </a>
     </li>
@@ -411,7 +430,7 @@
             
           
           
-            <a href='/'>Acceuil</a> > <a href='/methodologies/'>Méthodologies</a> > <a href='/methodologies/execution/'>Execution</a> > 
+            <a href='/'>Acceuil</a> > <a href='/methodologies/'>Méthodologies</a> > <a href='/methodologies/execution/'>Execution</a> > T1173 - Dynamic Data Exchange (DDE)
           
          
           
@@ -446,7 +465,7 @@
           
             <h1>
               
-              
+              T1173 - Dynamic Data Exchange (DDE)
             </h1>
           
 
@@ -454,22 +473,21 @@
 
 
 
-<h1 id="t1173---dynamic-data-exchange-dde">T1173 - Dynamic Data Exchange (DDE)</h1>
 
-<div class="notices info" ><p><strong>ID</strong>:  T1173
-<strong>Tactique</strong>: Exécution
-<strong>Plateforme</strong>:  Windows
-<strong>Autorisations requises</strong>:  Utilisateur
+<div class="notices info" ><p><strong>ID</strong>:  T1173<br>
+<strong>Tactique</strong>: Exécution<br>
+<strong>Plateforme</strong>:  Windows<br>
+<strong>Autorisations requises</strong>:  Utilisateur<br>
 <strong>Sources de données</strong>:<br>
-<strong>Version</strong>:  1
-<strong>Création</strong>:  17/03/2020
+<strong>Version</strong>:  1<br>
+<strong>Création</strong>:  17/03/2020<br>
 <strong>Dernière modification</strong>:  17/03/2020</p>
 </div>
 
 <h2 id="description">Description</h2>
 <p>Le protocole DDE est une ancienne technologie de Microsoft utilisée pour facilite le transfèrer des données entre deux applications.
 Inter-Process Communication (IPC).</p>
-<p>Cette technique peut être utilisé dans les scénarios de Phishing.</p>
+<p>Cette technique peut être utilisé dans les scénarios de <strong>Phishing</strong>.</p>
 <p>l&rsquo;exécution du code dans les documents Microsoft Office.</p>
 <h1 id="référence">Référence</h1>
 <p><a href="https://docs.microsoft.com/fr-fr/windows/win32/dataxchg/about-dynamic-data-exchange?redirectedfrom=MSDN">https://docs.microsoft.com/fr-fr/windows/win32/dataxchg/about-dynamic-data-exchange?redirectedfrom=MSDN</a>
@@ -539,6 +557,22 @@ Inter-Process Communication (IPC).</p>
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -577,8 +611,6 @@ Inter-Process Communication (IPC).</p>
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -596,6 +628,8 @@ Inter-Process Communication (IPC).</p>
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -623,7 +657,7 @@ Inter-Process Communication (IPC).</p>
 	 
 	 
 		
-			<a class="nav nav-prev" href="/methodologies/execution/t1223_-compiled_html_file/" title="T1223 - Fichier HTML Compilé"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/methodologies/execution/" title="Execution"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/methodologies/execution/t1223_-compiled_html_file/" title="T1223 - Fichier HTML Compilé" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -636,19 +670,19 @@ Inter-Process Communication (IPC).</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1584987425"></script>
-    <script src="/js/perfect-scrollbar.min.js?1584987425"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1584987425"></script>
-    <script src="/js/jquery.sticky.js?1584987425"></script>
-    <script src="/js/featherlight.min.js?1584987425"></script>
-    <script src="/js/highlight.pack.js?1584987425"></script>
+    <script src="/js/clipboard.min.js?1588768639"></script>
+    <script src="/js/perfect-scrollbar.min.js?1588768639"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1588768639"></script>
+    <script src="/js/jquery.sticky.js?1588768639"></script>
+    <script src="/js/featherlight.min.js?1588768639"></script>
+    <script src="/js/highlight.pack.js?1588768639"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1584987425"></script>
-    <script src="/js/learn.js?1584987425"></script>
-    <script src="/js/hugo-learn.js?1584987425"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1588768639"></script>
+    <script src="/js/learn.js?1588768639"></script>
+    <script src="/js/hugo-learn.js?1588768639"></script>
 
-    <link href="/mermaid/mermaid.css?1584987425" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1584987425"></script>
+    <link href="/mermaid/mermaid.css?1588768639" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1588768639"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
